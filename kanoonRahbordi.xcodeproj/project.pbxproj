@@ -281,7 +281,7 @@
 				TargetAttributes = {
 					846D13881EDAD48B006BA106 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 687BB68TVP;
+						DevelopmentTeam = KCCZ4PVUZS;
 						ProvisioningStyle = Automatic;
 					};
 					846D139F1EDAD48B006BA106 = {
@@ -647,10 +647,11 @@
 			baseConfigurationReference = CC5DBFBCBC80756E577297E3 /* Pods-kanoonRahbordi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 687BB68TVP;
+				DEVELOPMENT_TEAM = KCCZ4PVUZS;
 				INFOPLIST_FILE = kanoonRahbordi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = negar.kanoonRahbordi;
+				PRODUCT_BUNDLE_IDENTIFIER = negarTara.kanoonRahbordi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -661,11 +662,13 @@
 			baseConfigurationReference = 4D1F6C85833B224C55CBC1AE /* Pods-kanoonRahbordi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 687BB68TVP;
+				DEVELOPMENT_TEAM = KCCZ4PVUZS;
 				INFOPLIST_FILE = kanoonRahbordi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = negar.kanoonRahbordi;
+				PRODUCT_BUNDLE_IDENTIFIER = negarTara.kanoonRahbordi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
