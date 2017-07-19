@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class SummeriesCollectionViewCell : UICollectionViewCell{
     
@@ -23,9 +24,7 @@ class EducationalSummaries: UIViewController {
     var sumcrsid = Int()
     var sumsbjid = Int()
     var groupCode = Int()
-    var sumcrsid = Int()
-    var sumsbjid = Int()
-    var groupCode = Int()
+    var subName = String()
     
     @IBOutlet weak var downButt: UIButton!
     @IBOutlet weak var summeryCollectionView: UICollectionView!
@@ -39,7 +38,7 @@ class EducationalSummaries: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func downloadSummary (url : String , completionHandler : @escaping (SummaryInfo? , Error) -> ()){
+    func downloadSummary (url : String? , completionHandler : @escaping (SummaryInfo? , Error?) -> ()){
         var sumInfo = SummaryInfo()
         if let urlstr = url{
             Alamofire.request(urlstr).responseJSON{
@@ -49,11 +48,11 @@ class EducationalSummaries: UIViewController {
                     let jsonresponse = JSON(value)
                     if let jsonArray = jsonresponse.array{
                         for summaries in jsonArray{
-                            sumInfo.LessonSummaryTitle = summaries["LessonSummaryTitle"].string
-                            sumInfo.ProfileId = summaries["ProfileId"].int
-                            sumInfo.Rid = summaries["Rid"].int
-                            sumInfo.SumObjId = summaries["SumObjId"].int
-                            sumInfo.TeacherName = summaries["TeacherName"].int
+                            sumInfo.LessonSummaryTitle = summaries["LessonSummaryTitle"].string!
+                            sumInfo.ProfileId = summaries["ProfileId"].int!
+                            sumInfo.Rid = summaries["Rid"].int!
+                            sumInfo.SumObjId = summaries["SumObjId"].int!
+                            sumInfo.TeacherName = summaries["TeacherName"].string!
                             completionHandler(sumInfo , nil)
                         }
                     }

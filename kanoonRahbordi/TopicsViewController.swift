@@ -118,6 +118,11 @@ class TopicsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             videoPage.sumcrsid = sumCrsID
             videoPage.sumsbjid = topicsArr[indexpath].SumSbjId
             videoPage.groupCode = groupCode
+            let summaryPage = tabView.viewControllers?[1] as! EducationalSummaries
+            summaryPage.sumcrsid = sumCrsID
+            summaryPage.sumsbjid = topicsArr[indexpath].SumSbjId
+            summaryPage.subName = topicsArr[indexpath].SbjName
+            summaryPage.groupCode = groupCode
         }
     }
 
