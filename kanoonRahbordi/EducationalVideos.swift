@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+@IBOutlet weak var nameOfTheTeacher: UILabel!
 import PINRemoteImage
 import AVKit
 import AVFoundation
