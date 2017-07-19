@@ -22,13 +22,17 @@ class MoviesCollectionViewCell : UICollectionViewCell{
     @IBOutlet weak var pictureOfTheTeacher: UIImageView!
     
 }
-
+class CollectionHeader: UICollectionReusableView{
+    @IBOutlet weak var headerLabel: UILabel!
+    
+}
 class EducationalVideos: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     
     fileprivate let itemsPerRow: CGFloat = 3
     fileprivate let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
 
+    //@IBOutlet weak var reusableView: UICollectionReusableView!
     @IBOutlet weak var playButt: UIButton!
     @IBOutlet weak var favButt: UIButton!
     @IBOutlet weak var downButt: UIButton!
@@ -39,6 +43,7 @@ class EducationalVideos: UIViewController, UICollectionViewDelegateFlowLayout, U
     var sumcrsid = Int()
     var sumsbjid = Int()
     var groupCode = Int()
+    var subName = String()
     var pageindex : Int = 1
     var currentIndexPath = Int()
 
@@ -69,6 +74,7 @@ class EducationalVideos: UIViewController, UICollectionViewDelegateFlowLayout, U
         favButt.setImage(#imageLiteral(resourceName: "fav"), for: .normal)
         playButt.setImage(#imageLiteral(resourceName: "play"), for: .normal)
         
+        
         self.automaticallyAdjustsScrollViewInsets = false;
 
         // Do any additional setup after loading the view.
@@ -77,6 +83,25 @@ class EducationalVideos: UIViewController, UICollectionViewDelegateFlowLayout, U
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                                 viewForSupplementaryElementOfKind kind: String,
+                                 at indexPath: IndexPath) -> UICollectionReusableView {
+        //1
+        switch kind {
+        //2
+        case UICollectionElementKindSectionHeader:
+            //3
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "collectionHeader", for: indexPath) as! CollectionHeader
+            
+            headerView.headerLabel.text = subName
+            headerView.headerLabel.textColor = UIColor(red: 0.01, green: 0.41, blue: 0.22, alpha: 1.0)
+            return headerView
+        default:
+            //4
+            assert(false, "Unexpected element kind")
+        }
     }
     
     @IBAction func refresh(_ sender: Any) {
@@ -145,6 +170,8 @@ class EducationalVideos: UIViewController, UICollectionViewDelegateFlowLayout, U
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return moviesInfo.count
     }
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
