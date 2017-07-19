@@ -111,6 +111,7 @@ class TopicsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         indexpath = indexPath.row
         performSegue(withIdentifier: "toTabs", sender: self)
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toTabs"{
             let tabView = segue.destination as! UITabBarController
@@ -118,6 +119,7 @@ class TopicsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             videoPage.sumcrsid = sumCrsID
             videoPage.sumsbjid = topicsArr[indexpath].SumSbjId
             videoPage.groupCode = groupCode
+            videoPage.subName = topicsArr[indexpath].SbjName
         }
     }
 
