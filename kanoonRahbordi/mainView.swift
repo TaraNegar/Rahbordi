@@ -37,7 +37,9 @@ class mainView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var yeartext: UILabel!
     @IBOutlet weak var backimage: UIImageView!
     
-    
+    let themeColor = UIColor(red: 0.01, green: 0.41, blue: 0.22, alpha: 1.0)
+    let refreshButt : UIButton = UIButton(frame: CGRect(x: 100, y: 400, width: 100, height: 50))
+
     var groupCode : Int!
     var Courses:[String] = []
     var row = Int()
@@ -69,6 +71,14 @@ class mainView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refreshButt.backgroundColor = themeColor
+        refreshButt.setTitle("تلاش مجدد", for: .normal)
+        refreshButt.addTarget(self, action: #selector(refreshAction), for: .touchUpInside)
+        refreshButt.isHidden = true
+        refreshButt.tag = 1
+        self.view.addSubview(refreshButt)
+        
         downloadExamDate{
             response, error in
             if response != nil{
@@ -85,6 +95,9 @@ class mainView: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 self.courseinfo.append(coursinf!)
                 self.courseListTableView.reloadData()
                 
+            }
+            else {
+                self.refreshButt.isHidden = false
             }
             
         }
@@ -155,6 +168,7 @@ class mainView: UIViewController, UITableViewDelegate, UITableViewDataSource {
                             
                         }
                     case .failure(let error):
+                        self.refreshButt.isHidden = false
                         completionHandler(nil, error)
                     }
             }
@@ -183,6 +197,7 @@ class mainView: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 completionHandler(timeseprated , nil)
                 
             case .failure(let error):
+                self.refreshButt.isHidden = false
                 completionHandler(nil, error)
             }
         
@@ -338,6 +353,14 @@ class mainView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return nameOfTheMonth
     
     }
-    
+    func refreshAction(sender: UIButton!){
+        let btnsendtag: UIButton = sender
+        if btnsendtag.tag == 1 {
+            
+            self.viewDidLoad()
+        }
+        
+        
+    }
     
 }

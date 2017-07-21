@@ -32,11 +32,9 @@ class EducationalVideos: UIViewController, UICollectionViewDelegateFlowLayout, U
     fileprivate let itemsPerRow: CGFloat = 3
     fileprivate let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
 
-    //@IBOutlet weak var reusableView: UICollectionReusableView!
     @IBOutlet weak var playButt: UIButton!
     @IBOutlet weak var favButt: UIButton!
     @IBOutlet weak var downButt: UIButton!
-    @IBOutlet weak var topicNameAndWarning: UILabel!
     @IBOutlet weak var moviesCollection: UICollectionView!
     
     var moviesInfo = [MoviesDara]()
@@ -59,7 +57,6 @@ class EducationalVideos: UIViewController, UICollectionViewDelegateFlowLayout, U
             
             else {
                     self.downButt.titleLabel?.text = "تلاش مجدد"
-                    self.topicNameAndWarning?.text = "لطفا اینترنت خود را بررسی کنید"
             }
         }
         self.view.backgroundColor =  UIColor(red: 245/255, green: 245/255, blue: 245/255, alpha: 1.0)

@@ -14,7 +14,6 @@
 		57F0232A1F1B46EA00414FA9 /* makingroundandradios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F023291F1B46EA00414FA9 /* makingroundandradios.swift */; };
 		6573718378B45E32BD9B3053 /* Pods_kanoonRahbordiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A6571106CE7D564A4ADC00 /* Pods_kanoonRahbordiTests.framework */; };
 		8436F5C61F0BC24400C02F51 /* EducationalVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436F5C51F0BC24400C02F51 /* EducationalVideos.swift */; };
-		8436F5C81F0BC3B800C02F51 /* EducationalSummaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436F5C71F0BC3B800C02F51 /* EducationalSummaries.swift */; };
 		843B43AB1EE685FA0043C419 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B43AA1EE685FA0043C419 /* LogoView.swift */; };
 		84625AFC1EDD93A500BA143B /* mainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84625AFB1EDD93A500BA143B /* mainView.swift */; };
 		846D138D1EDAD48B006BA106 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D138C1EDAD48B006BA106 /* AppDelegate.swift */; };
@@ -61,7 +60,6 @@
 		57F023291F1B46EA00414FA9 /* makingroundandradios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = makingroundandradios.swift; sourceTree = "<group>"; };
 		68D91CBE2E1EC57C74D9A751 /* Pods-kanoonRahbordiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kanoonRahbordiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kanoonRahbordiUITests/Pods-kanoonRahbordiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8436F5C51F0BC24400C02F51 /* EducationalVideos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationalVideos.swift; sourceTree = "<group>"; };
-		8436F5C71F0BC3B800C02F51 /* EducationalSummaries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationalSummaries.swift; sourceTree = "<group>"; };
 		843B43AA1EE685FA0043C419 /* LogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		84625AFB1EDD93A500BA143B /* mainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainView.swift; sourceTree = "<group>"; };
 		846D13891EDAD48B006BA106 /* kanoonRahbordi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kanoonRahbordi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +149,6 @@
 				84625AFB1EDD93A500BA143B /* mainView.swift */,
 				843B43AA1EE685FA0043C419 /* LogoView.swift */,
 				8436F5C51F0BC24400C02F51 /* EducationalVideos.swift */,
-				8436F5C71F0BC3B800C02F51 /* EducationalSummaries.swift */,
 				57AA6A961F1F7A180026850A /* EducationalSummaries.swift */,
 				5778B0381F124E6E009132E8 /* UserInfo.swift */,
 				84E60FD41F14D93C00FE7E6C /* Menu.swift */,
@@ -494,7 +491,6 @@
 				84625AFC1EDD93A500BA143B /* mainView.swift in Sources */,
 				843B43AB1EE685FA0043C419 /* LogoView.swift in Sources */,
 				84E60FD51F14D93C00FE7E6C /* Menu.swift in Sources */,
-				8436F5C81F0BC3B800C02F51 /* EducationalSummaries.swift in Sources */,
 				8436F5C61F0BC24400C02F51 /* EducationalVideos.swift in Sources */,
 				57AA6A951F1F69CE0026850A /* SummaryInfo.swift in Sources */,
 				846D13BE1EDAE5A9006BA106 /* kanooniEnter.swift in Sources */,
