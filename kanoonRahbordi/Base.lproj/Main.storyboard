@@ -496,11 +496,30 @@
                     <connections>
                         <outlet property="downButt" destination="T5g-Y0-and" id="eMu-O2-d1R"/>
                         <outlet property="summeryCollectionView" destination="oxV-aJ-sNP" id="q6s-rL-4Uo"/>
+                        <segue destination="rVM-hB-DQD" kind="show" identifier="pdfView" id="PUS-sG-Kbo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9o2-tA-QiY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7436" y="-87.706146926536732"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ebt-vN-rvf">
+            <objects>
+                <viewController id="rVM-hB-DQD" customClass="PDFViewController" customModule="kanoonRahbordi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4tw-cp-NEe"/>
+                        <viewControllerLayoutGuide type="bottom" id="4wo-CW-kuM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lZi-Eh-SRM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNq-eU-PNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8302" y="-89"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="7c9-Ga-wI9">
@@ -556,11 +575,11 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X3K-Dg-HA4">
-                                                    <rect key="frame" x="151" y="9" width="48" height="54"/>
+                                                    <rect key="frame" x="152" y="9" width="48" height="54"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.14999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="vtH-BP-PWO">
-                                                    <rect key="frame" x="10" y="16" width="139" height="47"/>
+                                                    <rect key="frame" x="11" y="16" width="139" height="47"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
