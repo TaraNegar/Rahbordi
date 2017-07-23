@@ -64,6 +64,8 @@
 		57BD18751F23379C00FC32F2 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 
 82f0b87c8f86954d7f3b603c1a8a631f4b9ac7dd
+		57AA6A961F1F7A180026850A /* EducationalSummaries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EducationalSummaries.swift; path = ../../EducationalSummaries.swift; sourceTree = "<group>"; };
+		57BD18751F23379C00FC32F2 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		57F023291F1B46EA00414FA9 /* makingroundandradios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = makingroundandradios.swift; sourceTree = "<group>"; };
 		68D91CBE2E1EC57C74D9A751 /* Pods-kanoonRahbordiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kanoonRahbordiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kanoonRahbordiUITests/Pods-kanoonRahbordiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8436F5C51F0BC24400C02F51 /* EducationalVideos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationalVideos.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 
 				8436F5C71F0BC3B800C02F51 /* EducationalSummaries.swift */,
  82f0b87c8f86954d7f3b603c1a8a631f4b9ac7dd
+				57AA6A961F1F7A180026850A /* EducationalSummaries.swift */,
 				5778B0381F124E6E009132E8 /* UserInfo.swift */,
 				84E60FD41F14D93C00FE7E6C /* Menu.swift */,
 				849F99471F1612A3008BA908 /* TopicsViewController.swift */,
@@ -498,6 +501,7 @@
 				846D13951EDAD48B006BA106 /* kanoonRahbordi.xcdatamodeld in Sources */,
 				849F99481F1612A3008BA908 /* TopicsViewController.swift in Sources */,
 				57F0232A1F1B46EA00414FA9 /* makingroundandradios.swift in Sources */,
+				57AA6A971F1F7A180026850A /* EducationalSummaries.swift in Sources */,
 				846D138F1EDAD48B006BA106 /* ViewController.swift in Sources */,
 				84625AFC1EDD93A500BA143B /* mainView.swift in Sources */,
 				843B43AB1EE685FA0043C419 /* LogoView.swift in Sources */,
